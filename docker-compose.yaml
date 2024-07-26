@@ -3,6 +3,8 @@ services:
   mailcatcher:
     build:
       context: .
+    expose:
+      - 1025
     ports:
-    - "1080:1080"
-    - "1025:1025"
+      - "1080:1080"
+      - "1025:1025"
